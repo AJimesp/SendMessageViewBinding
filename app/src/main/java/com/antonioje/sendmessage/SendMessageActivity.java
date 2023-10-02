@@ -24,15 +24,14 @@ public class SendMessageActivity extends AppCompatActivity {
         //fab.setOnClickListener(onClickListener);
 
         //OPCIÓN 2: Clase anónima
-        fab.setOnClickListener(new View.OnClickListener() {
+       /* fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(SendMessageActivity.this, "Se crea el texto en la clase anónima", Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
 
         //OPCIÓN 3: Expresión Lambda
-
         fab.setOnClickListener(v -> Toast.makeText(this, "Se crea el texto en la clase anónima", Toast.LENGTH_SHORT).show());
 
     }
