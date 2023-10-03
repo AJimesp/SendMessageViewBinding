@@ -13,7 +13,7 @@ import java.util.Objects;
 * @author: Antonio Jimenez Espejo
 * @version: 1.0
 * */
-public class Person implements Parcelable {
+public class Person implements Parcelable,Serializable {
     public static final String KEY = "PERSON";
     private  String name;
     private  String surname;

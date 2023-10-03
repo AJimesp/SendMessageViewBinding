@@ -51,6 +51,7 @@ public class SendMessageActivity extends AppCompatActivity {
             Message message = new Message(0,edMessage.getText().toString(),personE,personD);
             bundle.putParcelable(Person.KEY,personE);
             bundle.putSerializable(Message.KEY,message);
+            bundle.putString("MessageP",edMessage.getText().toString());
             intent.putExtras(bundle);
             startActivity(intent);
 
