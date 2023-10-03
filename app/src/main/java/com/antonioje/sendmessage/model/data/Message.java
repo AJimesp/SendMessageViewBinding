@@ -1,13 +1,17 @@
 package com.antonioje.sendmessage.model.data;
 
+import java.io.Serializable;
 import java.util.Objects;
+
+import kotlin.text.UStringsKt;
 
 /**
  * Clase que guarda un mensaje que manda una persona emisor a otra persona
  * @author Antonio Jiménez Espejo
  * @version 1.0
  * */
-public class Message {
+public class Message implements Serializable {
+    public static final String KEY = "MESSAGE";
     private  int id;
     private String content;
     private Person sender;

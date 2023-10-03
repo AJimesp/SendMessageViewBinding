@@ -1,5 +1,11 @@
 package com.antonioje.sendmessage.model.data;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
@@ -7,7 +13,8 @@ import java.util.Objects;
 * @author: Antonio Jimenez Espejo
 * @version: 1.0
 * */
-public class Person {
+public class Person implements Parcelable {
+    public static final String KEY = "PERSON";
     private  String name;
     private  String surname;
     private  String dni;
@@ -17,7 +24,9 @@ public class Person {
         this.surname = surname;
         this.dni = dni;
     }
-//region Métodos SET y GET de la clase
+
+
+    //region Métodos SET y GET de la clase
     public String getName() {
         return name;
     }
@@ -57,10 +66,34 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", dni='" + dni + '\'' +
-                '}';
+        return name + ", " + surname + ", con DNI: " + dni;
+    }
+    protected Person(Parcel in) {
+        name = in.readString();
+        surname = in.readString();
+        dni = in.readString();
+    }
+
+    public static final Creator<Person> CREATOR = new Creator<Person>() {
+        @Override
+        public Person createFromParcel(Parcel in) {
+            return new Person(in);
+        }
+
+        @Override
+        public Person[] newArray(int size) {
+            return new Person[size];
+        }
+    };
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(@NonNull Parcel dest, int flags) {
+        dest.writeString(name);
+        dest.writeString(surname);
+        dest.writeString(dni);
     }
 }
