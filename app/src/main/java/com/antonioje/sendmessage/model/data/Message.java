@@ -1,5 +1,10 @@
 package com.antonioje.sendmessage.model.data;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -10,7 +15,7 @@ import kotlin.text.UStringsKt;
  * @author Antonio Jiménez Espejo
  * @version 1.0
  * */
-public class Message implements Serializable {
+public class Message implements Parcelable,Serializable {
     public static final String KEY = "MESSAGE";
     private  int id;
     private String content;
@@ -24,6 +29,25 @@ public class Message implements Serializable {
         this.receiver = receiver;
     }
     //region Métodos SET y Get de la clase Message
+
+    protected Message(Parcel in) {
+        id = in.readInt();
+        content = in.readString();
+        sender = in.readParcelable(Person.class.getClassLoader());
+        receiver = in.readParcelable(Person.class.getClassLoader());
+    }
+
+    public static final Creator<Message> CREATOR = new Creator<Message>() {
+        @Override
+        public Message createFromParcel(Parcel in) {
+            return new Message(in);
+        }
+
+        @Override
+        public Message[] newArray(int size) {
+            return new Message[size];
+        }
+    };
 
     public int getId() {
         return id;
@@ -81,5 +105,18 @@ public class Message implements Serializable {
                 ", sender=" + sender +
                 ", receiver=" + receiver +
                 '}';
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(@NonNull Parcel dest, int flags) {
+        dest.writeInt(id);
+        dest.writeString(content);
+        dest.writeParcelable(sender, flags);
+        dest.writeParcelable(receiver, flags);
     }
 }

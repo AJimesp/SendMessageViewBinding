@@ -42,22 +42,30 @@ public class SendMessageActivity extends AppCompatActivity {
         //OPCIÓN 3: Expresión Lambda
         fab.setOnClickListener(v -> {
             //Toast.makeText(this, "Se crea el texto en la clase anónima", Toast.LENGTH_SHORT).show();
-            edMessage = findViewById(R.id.edMessage);
-            Intent intent = new Intent(this,ViewActivity.class);
-            Bundle bundle = new Bundle();
-            //bundle.putString("user","El usuario Antonio Jiménez Espejo te manda el siguiente mensaje: ");
-            Person personE = new Person("Antonio","Jiménez Espejo","55758512X");
-            Person personD = new Person("Pablo","López Carrasco","85761232Y");
-            Message message = new Message(0,edMessage.getText().toString(),personE,personD);
-            bundle.putParcelable(Person.KEY,personE);
-            bundle.putSerializable(Message.KEY,message);
-            bundle.putString("MessageP",edMessage.getText().toString());
-            intent.putExtras(bundle);
-            startActivity(intent);
-
+            sendMessage();
         });
 
     }
+/**
+ * Metodo que construye el mensaje y lo envia
+ * */
+    private void sendMessage() {
+        edMessage = findViewById(R.id.edMessage);
+        Intent intent = new Intent(this,ViewActivity.class);
+        Bundle bundle = new Bundle();
+        //bundle.putString("user","El usuario Antonio Jiménez Espejo te manda el siguiente mensaje: ");
+        Person personE = new Person("Antonio","Jiménez Espejo","55758512X");
+        Person personD = new Person("Pablo","López Carrasco","85761232Y");
+        Message message = new Message(0,edMessage.getText().toString(),personE,personD);
+        bundle.putParcelable(Person.KEY,personE);
+        //OPCIÓN 1: Mandar mensaje como serializable
+        bundle.putSerializable(Message.KEY,message);
+        //OPCIÓN 2: Mandar mensaje como parcelable
+        bundle.putParcelable(Message.KEY,message);
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
+
     /**
     * OPCIÓN 1: Se crea una clase que implementa la interfaz View.OnClickListener
     * */
