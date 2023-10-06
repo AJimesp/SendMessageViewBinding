@@ -1,4 +1,4 @@
-package com.antonioje.sendmessage.model.data;
+package com.antonioje.sendmessageviewbinding.model.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;

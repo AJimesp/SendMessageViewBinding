@@ -3,11 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.antonioje.sendmessage"
+    namespace = "com.antonioje.sendmessageviewbinding"
     compileSdk = 33
-
+    viewBinding{
+        enable = true;
+    }
     defaultConfig {
-        applicationId = "com.antonioje.sendmessage"
+        applicationId = "com.antonioje.sendmessageviewbinding"
         minSdk = 26
         targetSdk = 33
         versionCode = 1

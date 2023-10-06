@@ -1,4 +1,4 @@
-package com.antonioje.sendmessage;
+package com.antonioje.sendmessageviewbinding;
 
 import android.content.Context;
 

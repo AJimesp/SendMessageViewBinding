@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SendMessage"
+rootProject.name = "SendMessageViewBinding"
 include(":app")
  

@@ -1,4 +1,4 @@
-package com.antonioje.sendmessage.model.data;
+package com.antonioje.sendmessageviewbinding.model.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -7,8 +7,6 @@ import androidx.annotation.NonNull;
 
 import java.io.Serializable;
 import java.util.Objects;
-
-import kotlin.text.UStringsKt;
 
 /**
  * Clase que guarda un mensaje que manda una persona emisor a otra persona
