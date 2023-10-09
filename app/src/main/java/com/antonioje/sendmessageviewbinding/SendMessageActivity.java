@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -17,7 +20,22 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class SendMessageActivity extends AppCompatActivity {
     private static final String TAG = "SendMessageActivity";
     private ActivitySendMessageBinding binding;
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu,menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        if (item.getItemId() == R.id.menu_aboutus){
+                Intent intent = new Intent(this,AboutActivity.class);
+                startActivity(intent);
+                return true;
+        }
+        return false;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
