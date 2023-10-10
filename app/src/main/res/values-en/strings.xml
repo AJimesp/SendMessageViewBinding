@@ -4,5 +4,6 @@
     <string name="tvTitleMessage">Write a message</string>
     <string name="tvUserInfoText">Show user information</string>
     <string name="tvMessageText">The message information</string>
-    <string name="menu_aboutus">About me</string>
+    <string name="menu_about">About me</string>
+    <string name="cardAuthor">Author</string>
 </resources>
