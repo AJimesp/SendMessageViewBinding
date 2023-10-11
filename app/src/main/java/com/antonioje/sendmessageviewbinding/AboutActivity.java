@@ -51,7 +51,7 @@ public class AboutActivity extends MaterialAboutActivity {
                         startActivity(intent); cont.set(0);
                     }
                     else{
-                        Toast.makeText(getApplicationContext(),"Estás a  " + (NVECES_INFO - cont.get())+ " de abrir mi WEB", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Estás a " + (NVECES_INFO - cont.get())+ " pulsaciones de abrir mi WEB", Toast.LENGTH_SHORT).show();
                         cont.getAndIncrement();}
                 })
                 .build());
