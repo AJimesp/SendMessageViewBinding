@@ -14,4 +14,5 @@
     <string name="cardInfo_title">Información</string>
     <string name="cardInfo_version">Versión</string>
     <string name="cardInfo_vnumber" translatable="false">1.0.5</string>
+    <string name="cardInfo_tabVersion">Estas a %1$d de abrir mi WEB</string>
 </resources>

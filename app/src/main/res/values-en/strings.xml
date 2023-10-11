@@ -11,4 +11,5 @@
     <string name="cardInfo_sendEmail">Send an email</string>
     <string name="cardInfo_title">Information</string>
     <string name="cardInfo_version">Versión</string>
+    <string name="cardInfo_tabVersion">You are %1$d clicks away to open my WEB</string>
 </resources>
