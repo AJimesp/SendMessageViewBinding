@@ -2,7 +2,6 @@ package com.antonioje.sendmessageviewbinding;
 
 import android.app.Application;
 import android.util.Log;
-
 public class MessageApplication extends Application {
     public static final String TAG = "MessageApplication";
     @Override

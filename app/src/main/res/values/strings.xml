@@ -4,5 +4,14 @@
     <string name="tvUserInfoText">Muestra la información del usuario</string>
     <string name="tvMessageText">Muestra la información del mensaje</string>
     <string name="menu_about">Sobre mi</string>
-    <string name="cardAuthor">Autor</string>
+    <string name="cardAuthor_title">Autor</string>
+    <string name="cardAuthor_author" translatable="false">Antonio Jiménez Espejo</string>
+    <string name="cardAuthor_region" >España</string>
+    <string name="cardAuthor_repository">Repositorio</string>
+    <string name="cardAuthor_repositoryGit" translatable="false">GitHub</string>
+    <string name="cardInfo_sendEmail">Enviar un correo</string>
+    <string name="cardInfo_email" translatable="false">al.antonio.jimenez.espejo@iesportada.org</string>
+    <string name="cardInfo_title">Información</string>
+    <string name="cardInfo_version">Versión</string>
+    <string name="cardInfo_vnumber" translatable="false">1.0.5</string>
 </resources>

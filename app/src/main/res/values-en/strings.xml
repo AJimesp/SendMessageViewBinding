@@ -5,5 +5,10 @@
     <string name="tvUserInfoText">Show user information</string>
     <string name="tvMessageText">The message information</string>
     <string name="menu_about">About me</string>
-    <string name="cardAuthor">Author</string>
+    <string name="cardAuthor_title">Author</string>
+    <string name="cardAuthor_region" >Spain</string>
+    <string name="cardAuthor_repository">Repository</string>
+    <string name="cardInfo_sendEmail">Send an email</string>
+    <string name="cardInfo_title">Information</string>
+    <string name="cardInfo_version">Versión</string>
 </resources>

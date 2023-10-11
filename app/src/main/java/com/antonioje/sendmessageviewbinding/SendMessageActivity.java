@@ -12,7 +12,11 @@ import android.view.MenuItem;
 import com.antonioje.sendmessageviewbinding.databinding.ActivitySendMessageBinding;
 import com.antonioje.sendmessageviewbinding.model.data.Message;
 import com.antonioje.sendmessageviewbinding.model.data.Person;
-
+/**
+ * Clase que guarda un mensaje que manda una persona emisor a otra persona
+ * @author Antonio Jiménez Espejo
+ * @version 1.0
+ * */
 public class SendMessageActivity extends AppCompatActivity {
     private static final String TAG = "SendMessageActivity";
     private ActivitySendMessageBinding binding;
