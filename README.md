@@ -1,18 +1,18 @@
 # SendMessageViewBinding
 ###### Objetivo del proyecto 
-Enviar un objeto Message (Contenido del Mensaje), y otro Persona (Datos de usuario) de la activity que obtiene el contenido a otra activity que la recibe y lo muestra por pantalla.
+Enviar un objeto Message (Contenido del Mensaje), y otro Persona (Datos de usuario) desde SendMessageActivity, donde se introduce el mensaje, a ViewMessageActivity, que reciben dichos objetos y los muestra por pantalla.
 #### Conceptos aprendidos
-- Diferentes ciclos de vida de una activity
-- Implementación de ficheros "strings.xml" con la traducción en diferentes idiomas
-- Asignación de métodos a los diferente eventos mediante expresiones Lambda
-- Usos del "DataBinding" para tener instancia de las diferentes activities
-- Implementación de las clases "Bundle" para almacenar todo el contenido del mensaje
-- Envio de datos entre diferentes activities mediante  las clases "Intent"
-- Uso de las diferentes interfaces "Serializable" y "Parcelable" en las clases "Message" y "Persona" para facilitar el envio de estos 
-- Modificacíon de los diferentes "themes" y "colors" de la aplicación
-- Adaptación de la "ActivitySendMessage" en land modificando la fuente de texto
+- Diferentes estados del ciclo de vida de una activity
+- Implementación de ficheros de recurso "strings.xml" con la traducción en diferentes idiomas
+- Asignación de métodos a los diferentes eventos mediante expresiones Lambda
+- Usos del "DataBinding" para tener instancias de las diferentes activities
+- Uso de la clase "Bundle" para almacenar el contenido que viaja entre activities
+- Envio de objetos mediante las clase "Intent"
+- Uso de las diferentes interfaces "Serializable" y "Parcelable" en las clases "Message" y "Persona" para facilitar el envio de estos
+- Modificacíon de los recursos "themes" y "colors" de la aplicación
+- Adaptación de la "ActivitySendMessage" para orientación land, modificando la fuente de texto
 - Uso del ActionBar para implementar una nueva Activity "About Us"
-- Implementación de la libreria "[MaterialAbout](http://https://github.com/daniel-stoneuk/material-about-library "MaterialAbout")" con la que se diseña la Activity "About Us"
+- Implementación de la librería "[MaterialAbout](http://https://github.com/daniel-stoneuk/material-about-library "MaterialAbout")" con la que se diseña la Activity "About Us"
 - Uso de la clase "MaterialAboutCard" para añadir diferentes apartados en la Activity "About Us"
 #### Capturas de la aplicación
 ###### SendMessageActivity y ViewActivity
@@ -21,7 +21,7 @@ Enviar un objeto Message (Contenido del Mensaje), y otro Persona (Datos de usuar
     <img src="https://github.com/AJimesp/SendMessageViewBinding/assets/99723625/f25d9148-9e28-4427-bae9-6fcb4bbf2957"   height="450" width="220"/>
 </div>
 
-###### SendMessageActivity(land)
+###### SendMessageActivity (land)
 <p align="left">
 <img src="https://github.com/AJimesp/SendMessageViewBinding/assets/99723625/bd809734-e1fb-4d0f-b244-72f29f74eba8"  height="220" width="450">
 </p>
