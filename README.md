@@ -12,7 +12,7 @@ Enviar un objeto Message (Contenido del Mensaje), y otro Persona (Datos de usuar
 - Modificación de los recursos "themes" y "colors" de la aplicación
 - Adaptación de la "ActivitySendMessage" para orientación land, modificando la fuente de texto
 - Uso del ActionBar para implementar una nueva Activity "About Us"
-- Implementación de la librería "[MaterialAbout](http://https://github.com/daniel-stoneuk/material-about-library "MaterialAbout")" con la que se diseña la Activity "About Us"
+- Implementación de la librería "[MaterialAbout](https://github.com/daniel-stoneuk/material-about-library "MaterialAbout")" con la que se diseña la Activity "About Us"
 - Uso de la clase "MaterialAboutCard" para añadir diferentes apartados en la Activity "About Us"
 #### Capturas de la aplicación
 ###### SendMessageActivity y ViewActivity
