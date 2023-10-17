@@ -1,6 +1,6 @@
 # SendMessageViewBinding
 ###### Objetivo del proyecto 
-Enviar un objeto Message (Contenido del Mensaje), y otro Persona (Datos de usuario) desde SendMessageActivity, donde se introduce el mensaje, a ViewMessageActivity, que recibe dichos objetos y los muestra por pantalla.
+Enviar un objeto Message (Contenido del Mensaje), y otro Person (Datos de usuario) desde SendMessageActivity, donde se introduce el mensaje, a ViewMessageActivity, que recibe dichos objetos y los muestra por pantalla.
 #### Conceptos aprendidos
 - Diferentes estados del ciclo de vida de una activity
 - Implementación de ficheros de recurso "strings.xml" con la traducción en diferentes idiomas
